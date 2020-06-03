@@ -1,7 +1,7 @@
 Specchio
 ========
 
-[![Build Status](https://travis-ci.org/brickgao/specchio.svg?branch=master)](https://travis-ci.org/brickgao/specchio)
+[![Build Status](https://github.com/delijati/specchio/workflows/specchio/badge.svg)](https://github.com/delijati/specchio)
 [![Coverage Status](https://coveralls.io/repos/brickgao/specchio/badge.svg?branch=master)](https://coveralls.io/r/brickgao/specchio?branch=master)
 [![PyPI version](https://img.shields.io/pypi/v/specchio.svg?style=flat)](https://pypi.python.org/pypi/Specchio)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
