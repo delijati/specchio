@@ -5,7 +5,7 @@ import fnmatch
 import re
 from unittest import TestCase
 
-import mock
+from unittest import mock
 from specchio.handlers import SpecchioEventHandler
 from watchdog.events import (DirCreatedEvent, FileCreatedEvent,
                              FileDeletedEvent, FileModifiedEvent,

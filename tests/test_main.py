@@ -4,7 +4,7 @@
 import io
 from unittest import TestCase
 
-import mock
+from unittest import mock
 from testfixtures import LogCapture
 
 from specchio.main import main

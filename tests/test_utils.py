@@ -6,7 +6,7 @@ import logging
 import sys
 from unittest import TestCase
 
-import mock
+from unittest import mock
 from specchio.utils import (get_all_re, get_re_from_single_line, init_logger,
                             remote_create_folder, remote_mv, remote_rm, rsync,
                             rsync_multi, walk_get_gitignore)
@@ -96,7 +96,7 @@ class WalkGetGitignoreTest(TestCase):
 class GetAllReTest(TestCase):
 
     # Don't use mock_open, it doesn't support iter for file
-    @mock.patch("__builtin__.open")
+    @mock.patch("builtins.open")
     @mock.patch("specchio.utils.re")
     @mock.patch("specchio.utils.get_re_from_single_line")
     def test_get_all_re(self, _get_re, _re, _open):

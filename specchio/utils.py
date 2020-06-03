@@ -35,7 +35,7 @@ def get_re_from_single_line(line):
         line += "*"
     if line == "":
         # A blank line matches no files
-        return 0,  None
+        return 0, None
     elif line.startswith("#"):
         # A line starting with `#` serves as a comment
         return 0, None
@@ -162,8 +162,7 @@ def rsync_multi(dst_ssh, folder_path, src_paths, dst_path):
     :param dst_path: str -- destination of file
     :return: None
     """
-    _include_tuples = map(lambda s: "--include=\"/{}\"".format(s),
-                          src_paths)
+    _include_tuples = ["--include=\"/{}\"".format(s) for s in src_paths]
     command = "rsync -avrm {0} --exclude=\"*.*\" {1} {2}:{3}".format(
         " ".join(_include_tuples), folder_path, dst_ssh, dst_path
     )

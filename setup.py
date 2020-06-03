@@ -5,7 +5,6 @@ from setuptools import find_packages, setup
 from specchio import __version__
 
 tests_requirements = [
-    "mock >= 1.0.1, < 2.0.0",
     "testfixtures >= 4.1.2, < 5.0.0"
 ]
 

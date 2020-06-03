@@ -51,6 +51,6 @@ def main():
             observer.join()
             logger.info("Specchio stopped, have a nice day :)")
         else:
-            print MANUAL
+            print(MANUAL)
     else:
-        print MANUAL
+        print(MANUAL)

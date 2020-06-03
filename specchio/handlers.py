@@ -81,6 +81,7 @@ class SpecchioEventHandler(FileSystemEventHandler):
             # Change '/test/.gitignore' to '/test/'
             _gitignore_list[index] = _gitignore_list[index][:-10]
         self.gitignore_list = _gitignore_list
+        logger.info(self.gitignore_list)
         logger.info("All ignore pattern has been loaded")
 
     def update_gitignore(self, gitignore_path):
